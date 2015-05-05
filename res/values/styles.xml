@@ -1,0 +1,92 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="EditStyle">
+        <item name="android:layout_height">46dip</item>
+        <item name="android:background">@drawable/selector_editor</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="SlideSubTitle">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_slide</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/slide_title_text</item>
+        <item name="android:paddingTop">@dimen/subTitle_padding</item>
+        <item name="android:paddingBottom">@dimen/subTitle_padding</item>
+        <item name="android:textSize">@dimen/subTitle_text</item>
+        <item name="android:paddingLeft">@dimen/subTitle_padding</item>
+        <item name="android:drawablePadding">@dimen/subTitle_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SlideTitle">
+        <item name="android:textColor">@color/slide_title_text</item>
+        <item name="android:paddingTop">@dimen/title_padding</item>
+        <item name="android:paddingBottom">@dimen/title_padding</item>
+        <item name="android:textSize">@dimen/title_text</item>
+        <item name="android:background">@color/slide_title_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SlideDivide">
+        <item name="android:background">@color/slide_divede</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divide_height</item>
+    </style>
+
+    <style name="singleLinar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:background">@drawable/label</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/School_Text</item>
+        <item name="android:textSize">@dimen/textInitSize</item>
+        <item name="android:paddingTop">@dimen/title_padding</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/School_Text</item>
+        <item name="android:textSize">@dimen/subTitle_text</item>
+    </style>
+
+    <style name="BigButton">
+        <item name="android:textSize">@dimen/subTitle_text</item>
+        <item name="android:background">@drawable/selector_bigbtn</item>
+    </style>
+    
+        <style name="ContentListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/title_padding</item>
+    </style>
+
+</resources>

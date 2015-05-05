@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ContentListItem" >
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_chat_taqq"
+        android:layout_width="@dimen/length_ChatLogo"
+        android:layout_height="@dimen/length_ChatLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/ImageView"
+        android:scaleType="fitStart"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_chat_tamsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/subTitle_padding"
+        android:layout_toRightOf="@+id/iv_chat_taqq"
+        android:background="@drawable/chat_ta"
+        android:maxWidth="220dip"
+        android:textSize="@dimen/title_text" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_chat_myqq"
+        android:layout_width="@dimen/length_ChatLogo"
+        android:layout_height="@dimen/length_ChatLogo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/ImageView"
+        android:scaleType="fitStart"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_chat_mymsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/subTitle_padding"
+        android:layout_toLeftOf="@+id/iv_chat_myqq"
+        android:background="@drawable/chat_my"
+        android:maxWidth="220dip"
+        android:textSize="@dimen/title_text" />
+
+</RelativeLayout>

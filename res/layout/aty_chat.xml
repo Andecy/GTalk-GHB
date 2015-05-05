@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgshape" >
+
+    <TextView
+        android:id="@+id/tv_chat_label"
+        style="@style/Label" />
+
+    <ListView
+        android:id="@+id/lv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_chat"
+        android:layout_below="@+id/tv_chat_label" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/et_chat"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/btn_chat_ok" />
+
+        <Button
+            android:id="@+id/btn_chat_ok"
+            style="@style/BigButton"
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:layout_alignBottom="@+id/et_chat"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/title_padding"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/SendMsg" />
+    </RelativeLayout>
+
+</RelativeLayout>

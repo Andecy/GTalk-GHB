@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgshape" >
+
+    <TextView
+        style="@style/Label"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_bug" />
+
+    <TextView
+        android:id="@+id/tv_forgotten_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        style="@style/singleLinar"
+        android:layout_above="@+id/ll_forgotten_name"
+        android:layout_marginBottom="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RegisterEmail" />
+
+        <EditText
+            android:id="@+id/et_forgotten_email"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forgotten_name"
+        style="@style/singleLinar"
+        android:layout_above="@+id/ll_forgotten_code"
+        android:layout_marginBottom="25dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RegisterName" />
+
+        <EditText
+            android:id="@+id/et_forgotten_name"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:hint="@string/account_hint"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forgotten_code"
+        style="@style/singleLinar"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RegisterCode" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/et_forgotten_code"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:hint="@string/code_hint"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forgotten_pwd"
+        style="@style/singleLinar"
+        android:layout_below="@+id/ll_forgotten_code"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RegisterPwd" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/et_forgotten_pwd"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:hint="@string/pwd_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forgotten_cpwd"
+        style="@style/singleLinar"
+        android:layout_below="@+id/ll_forgotten_pwd"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RegistercPwd" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/et_forgotten_cpwd"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:hint="@string/cpwd_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_forgotten_cpwd"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_forgotten_code"
+            style="@style/BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/btn_sendCode" />
+
+        <TextView
+            android:layout_width="@dimen/reg_padding"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_forgotten_ok"
+            style="@style/BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/btn_alterPwd" />
+    </LinearLayout>
+
+</RelativeLayout>

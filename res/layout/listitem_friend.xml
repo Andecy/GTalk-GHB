@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ContentListItem" >
+
+    <ImageView
+        android:id="@+id/iv_friend_qq"
+        android:layout_width="@dimen/length_QQLogo"
+        android:layout_height="@dimen/length_QQLogo"
+        android:contentDescription="@string/ImageView"
+        android:paddingTop="@dimen/title_padding"
+        android:scaleType="fitStart"
+        android:src="@drawable/avatar" />
+
+    <LinearLayout
+        android:id="@+id/ll_friend_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/subTitle_padding"
+        android:layout_marginLeft="@dimen/subTitle_padding"
+        android:layout_toRightOf="@+id/iv_friend_qq"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/title_padding" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/subTitle_padding" >
+
+            <TextView
+                android:id="@+id/tv_friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RegisterName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subTitle_text" />
+
+            <ImageView
+                android:id="@+id/iv_friend_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/tv_friend_name"
+                android:background="@drawable/msg"
+                android:contentDescription="@string/ImageView" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_friend_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/subTitle_padding"
+            android:text="@string/Level"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subTitle_text" />
+    </LinearLayout>
+
+</RelativeLayout>

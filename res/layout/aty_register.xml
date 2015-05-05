@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgshape"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/reg_padding" >
+
+    <TextView
+        style="@style/Label"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/RegisterName" />
+
+        <EditText
+            android:id="@+id/et_register_name"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:inputType="phone"
+            android:maxLength="16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/RegisterPwd" />
+
+        <EditText
+            android:id="@+id/et_register_pwd"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/RegistercPwd" />
+
+        <EditText
+            android:id="@+id/et_register_cpwd"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/RegisterEmail" />
+
+        <EditText
+            android:id="@+id/et_register_email"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_padding" />
+
+    <CheckBox
+        android:id="@+id/cb_register_agree"
+        style="@style/CheckBox"
+        android:layout_gravity="center"
+        android:text="@string/RegAgree" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reg_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_register_code"
+            style="@style/BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/btn_sendCode" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reg_padding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/RegisterCode" />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/et_register_code"
+                style="@style/EditStyle"
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reg_padding" />
+
+        <Button
+            android:id="@+id/btn_register_ok"
+            style="@style/BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/Verify" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_register_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>

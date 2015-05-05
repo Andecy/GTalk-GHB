@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgshape"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/Label"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/slide_title_30" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/subTitle_padding" >
+
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/EditStyle"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/btn_search_ok"
+            android:hint="@string/Finding"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btn_search_ok"
+            style="@style/BigButton"
+            android:layout_width="80dip"
+            android:layout_height="45dip"
+            android:layout_alignBottom="@+id/et_search"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/title_padding"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/Verify" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/rl_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/subTitle_padding"
+        android:background="@color/white"
+        android:padding="@dimen/subTitle_padding" >
+
+        <ImageView
+            android:paddingTop="@dimen/subTitle_padding"
+            android:id="@+id/iv_search_qq"
+            android:layout_width="@dimen/length_QQLogo"
+            android:layout_height="@dimen/length_QQLogo"
+            android:contentDescription="@string/ImageView"
+            android:scaleType="fitStart"
+            android:src="@drawable/glogo" />
+
+        <LinearLayout
+            android:id="@+id/ll_search_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/subTitle_padding"
+            android:layout_marginLeft="@dimen/subTitle_padding"
+            android:layout_toRightOf="@+id/iv_search_qq"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/title_padding"
+                android:text="@string/PersonalData"
+                android:textSize="@dimen/textInitSize" />
+
+            <View style="@style/SlideDivide" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="@dimen/subTitle_text"
+                android:id="@+id/tv_search_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/subTitle_padding"
+                android:text="@string/RegisterName" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/subTitle_padding" >
+
+                <TextView
+                    
+                    android:textColor="@color/black"
+                android:textSize="@dimen/subTitle_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/Level" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/ImageView"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/hdr" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/ImageView"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/hdr" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/ImageView"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/hdr" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_search_data"
+            android:orientation="vertical"
+            android:padding="@dimen/subTitle_padding" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/title_padding"
+                android:text="@string/slide_title_02"
+                android:textSize="@dimen/textInitSize" />
+
+            <View style="@style/SlideDivide" />
+
+            <TextView
+                android:paddingTop="@dimen/subTitle_padding"
+                android:id="@+id/tv_search_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RegisterEmail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subTitle_text" />
+
+            <TextView
+                android:paddingTop="@dimen/subTitle_padding"
+                android:id="@+id/tv_search_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Sign"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subTitle_text" />
+            
+            <TextView
+                android:paddingTop="@dimen/subTitle_padding"
+                android:id="@+id/tv_search_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slide_title_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/subTitle_text" />
+        </LinearLayout>
+            <Button
+        android:id="@+id/btn_search_add"
+        style="@style/BigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/title_padding"
+        android:text="@string/btn_AddFriend" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textInitSize">21sp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="slidingmenu_width">250dip</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+    <dimen name="subTitle_padding">15dip</dimen>
+    <dimen name="reg_padding">10dip</dimen>
+    <dimen name="subTitle_text">17sp</dimen>
+    <dimen name="title_padding">5dip</dimen>
+    <dimen name="title_text">16sp</dimen>
+    <dimen name="divide_height">1dip</dimen>
+    <dimen name="length_QQLogo">90dip</dimen>
+    <dimen name="length_ChatLogo">40dip</dimen>
+
+</resources>

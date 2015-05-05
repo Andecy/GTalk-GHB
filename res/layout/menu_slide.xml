@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/subTitle_padding"
+        android:paddingLeft="@dimen/title_padding"
+        android:paddingTop="@dimen/subTitle_padding" >
+
+        <ImageView
+            android:id="@+id/iv_slide_qq"
+            android:layout_width="@dimen/length_QQLogo"
+            android:layout_height="@dimen/length_QQLogo"
+            android:contentDescription="@string/ImageView"
+            android:scaleType="fitStart"
+            android:src="@drawable/avatar" />
+
+        <TextView
+            android:id="@+id/tv_slide_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_slide_qq"
+            android:paddingLeft="@dimen/subTitle_padding"
+            android:paddingTop="@dimen/subTitle_padding"
+            android:text="@string/RegisterName"
+            android:textSize="@dimen/textInitSize"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_slide_name"
+            android:layout_toRightOf="@+id/iv_slide_qq"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/subTitle_padding"
+            android:paddingTop="@dimen/subTitle_padding" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ImageView"
+                android:scaleType="fitStart"
+                android:src="@drawable/hdr" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ImageView"
+                android:scaleType="fitStart"
+                android:src="@drawable/hdr" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ImageView"
+                android:scaleType="fitStart"
+                android:src="@drawable/hdr" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ImageView"
+                android:scaleType="fitStart"
+                android:src="@drawable/hdr" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_slide_sign"
+        android:drawableLeft="@drawable/sign"
+        style="@style/SlideSubTitle"
+        android:singleLine="true"
+        android:hint="@string/Signature" />
+
+    <View style="@style/SlideDivide" />
+
+    <ScrollView
+        android:id="@+id/sv_left_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/divide_height"
+        android:paddingTop="@dimen/subTitle_padding"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/layout_left_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_slide_others"
+                style="@style/SlideSubTitle"
+                android:drawableLeft="@drawable/settings"
+                android:text="@string/slide_title_02" />
+
+            <TextView
+                style="@style/SlideTitle"
+                android:text="@string/slide_title_1" />
+
+            <TextView
+                android:id="@+id/tv_slide_lineType"
+                style="@style/SlideSubTitle"
+                android:drawableLeft="@drawable/linetype_busy"
+                android:text="@string/slide_title_10" />
+
+            <View style="@style/SlideDivide" />
+
+            <TextView
+                android:id="@+id/tv_slide_alert"
+                style="@style/SlideSubTitle"
+                android:drawableLeft="@drawable/alert_all"
+                android:text="@string/slide_title_11" />
+
+            <View style="@style/SlideDivide" />
+
+            <TextView
+                android:id="@+id/tv_slide_logout"
+                style="@style/SlideSubTitle"
+                android:drawableLeft="@drawable/logout"
+                android:text="@string/slide_title_12" />
+
+            <TextView
+                style="@style/SlideTitle"
+                android:text="@string/slide_title_3" />
+
+            <TextView
+                android:id="@+id/tv_slide_search"
+                style="@style/SlideSubTitle"
+                android:drawableLeft="@drawable/search"
+                android:text="@string/slide_title_30" />
+
+            <View style="@style/SlideDivide" />
+
+            <TextView
+                android:id="@+id/tv_slide_exit"
+                style="@style/SlideSubTitle"
+                android:drawableLeft="@drawable/exit"
+                android:text="@string/slide_title_31" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

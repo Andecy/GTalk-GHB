@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="School_Text">#0059A3</color>
+    <color name="slide_title_bg">#58544E</color>
+    <color name="slide_title_text">#BEBEBE</color>
+    <color name="slide_subTitle_pressed">#5A5A5A</color>
+    <color name="slide_subTitle_unpressed">#343434</color>
+    <color name="lucency">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="slide_divede">#000000</color>
+
+</resources>

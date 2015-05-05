@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cb_alert_sound"
+        style="@style/CheckBox"
+        android:text="@string/AlertType_1" />
+
+    <CheckBox
+        android:id="@+id/cb_alert_shake"
+        style="@style/CheckBox"
+        android:text="@string/AlertType_2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:background="@drawable/ok"
+            android:id="@+id/cb_alert_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+        <Button
+            android:background="@drawable/cancel"
+            android:id="@+id/cb_alert_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ />
+    </LinearLayout>
+
+</LinearLayout>

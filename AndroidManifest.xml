@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andecy.gtalk"
+    android:versionCode="2"
+    android:versionName="14.11.14" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/glogo_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.andecy.gtalk.aty.WelcomeAty"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.LoginAty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.ForgottenAty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.RegisterAty"
+            android:label="@string/Reglabel"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.HomeAty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.LineTypeAty"
+            android:label="@string/slide_title_10"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.AlertAty"
+            android:label="@string/slide_title_11"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.SearchAty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.OthersAty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.SignAty"
+            android:label="@string/Signature"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.andecy.gtalk.aty.ChatAty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.andecy.gtalk.service.MsgService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.andecy.gtalk.service.UpdaterService2"
+            android:enabled="true" >
+        </service>
+    </application>
+
+</manifest>
